@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: (should be a list of wordpress.org userid's)
 Donate link: 
 Tags: comments, spam
 Requires at least: 4.6
