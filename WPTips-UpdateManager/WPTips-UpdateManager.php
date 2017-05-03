@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {die();}
 if (defined('WP_INSTALLING') && WP_INSTALLING) {return;}
 
 // Declarations
-$plugin_basename = plugin_basename(__FILE_);
+$plugin_basename = plugin_basename(__FILE__);
 
 // Include options
 include 'WPTips-UpdateManager_options.php';
