@@ -19,8 +19,13 @@ function UpdateManager_manage(){
 <?php
 //process choice
 
-if (get_option( 'ne_selection' )=='1') define (AUTOMATIC_UPDATER_DISABLED, true);
-else define (AUTOMATIC_UPDATER_DISABLED, false);
+if (get_option( 'ne_selection' )=='1'){
+  define( 'AUTOMATIC_UPDATER_DISABLED', true );
+  add_filter( 'automatic_updater_disabled', '__return_true' );
+}else{
+  define ('AUTOMATIC_UPDATER_DISABLED', false);
+  add_filter('automatic_updater_disabled', '__return_false');
+}
 ?>
 
 <div>
